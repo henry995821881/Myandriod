@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:rowCount="4"
+    android:orientation="horizontal" >
+    
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="butt1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="butt2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="butt4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="butt5" />
+    
+    <!-- 行和列是从0开始的。android:layout_columnSpan="2"占2列   -->
+    <!--  android:layout_gravity="fill_horizontal" 横向填充  -->
+    <Button
+        android:id="@+id/button6"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="butt6" />
+    
+
+</GridLayout>

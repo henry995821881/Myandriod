@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/henry_white"
+    android:paddingLeft="@dimen/com_sina_weibo_sdk_loginview_padding_left"
+    android:paddingRight="@dimen/com_sina_weibo_sdk_loginview_padding_right"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:id="@+id/henry_frag_host_list_9item_logandname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/henry_host_list_item_profile"
+            android:layout_width="@dimen/henry_weibo_fragme_profile_image"
+            android:layout_height="@dimen/henry_weibo_fragme_profile_image"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/henry_frag_host_list_item_friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableRight="@drawable/henry_frag_host_list_item_vip"
+                android:textColor="@color/henry_orange"
+                android:textSize="@dimen/henry_weibo_frag_host_screenname" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/henry_frag_host_list_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textSize="@dimen/henry_weibo_frag_host_timeandfrom" />
+
+                <TextView
+                    android:id="@+id/henry_frag_host_list_item_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/henry_weibo_frag_host_timeandfrom" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/henry_frag_host_list_9item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/henry_button_selector_bg"
+        android:layout_below="@id/henry_frag_host_list_9item_logandname"
+        android:layout_margin="10dp"
+     
+        
+        android:maxLength="200"
+        android:singleLine="false" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#20C7C7C7"
+        android:id="@+id/henry_frag_host_list_9item_re_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/henry_frag_host_list_9item_text"
+        android:layout_marginTop="20dp"
+        android:maxLength="200"
+        android:singleLine="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        
+        android:id="@+id/henry_frag_host_list_9item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/henry_frag_host_list_9item_re_text"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+         >
+
+        <!-- 单图 -->
+
+        <ImageView
+            android:id="@+id/henry_frag_host_list_item_single_pic"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="300dp"
+            android:maxWidth="300dp"
+          
+            android:visibility="gone" />
+
+        <!-- 多图 -->
+
+        <include
+          
+            android:id="@+id/henry_gridlayout_9pic"
+            android:layout_centerInParent="true"
+            layout="@layout/henry_gridlayout"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 评论选择项 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/henry_frag_host_list_9item_ll"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/henry_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="80dp" >
+
+            <CheckBox
+                android:id="@+id/henry_frag_host_list_item_transmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/henry_frag_host_item_transmit1"
+                android:drawablePadding="10dp"
+                android:text="29" />
+
+            <CheckBox
+                android:id="@+id/henry_frag_host_list_item_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/henry_frag_host_item_comment"
+                android:drawablePadding="10dp"
+                android:text="29" />
+
+            <CheckBox
+                android:id="@+id/henry_frag_host_list_item_zan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/button_check_thum"
+                android:drawablePadding="10dp"
+                android:text="29" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_marginTop="@dimen/henry_weibo_report_margin"
+    tools:context=".WeiboPublishChar" >
+
+    <RelativeLayout
+        android:id="@+id/henry_publicweibo_char_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/henry_weibo_publish_head_height"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/henry_button_send_selector"
+            android:onClick="cancel"
+            android:text="@string/henry_publish_cancle"
+            android:textColor="@color/henry_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/henry_publish_report"
+            android:textColor="@color/henry_orange"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_marginRight="30dp"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/henry_button_send_selector"
+            android:onClick="send"
+            android:text="@string/henry_publish_send"
+            android:textColor="@color/henry_gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/henry_publish_weibo_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/henry_publicweibo_char_head"
+        android:background="@drawable/henry_edit_seletor"
+        android:gravity="left|top"
+        android:hint=" 输入内容"
+        android:inputType="textMultiLine"
+        android:maxLength="120"
+        android:minLines="6"
+        android:singleLine="false" />
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:background="@color/henry_line"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/henry_publish_weibo_edittext" >
+
+        <ImageView
+            android:id="@+id/henry_report_image"
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:scaleType="fitXY"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_marginRight="30dp" 
+            android:layout_marginLeft="30dp"
+            android:singleLine="false"
+            android:id="@+id/henry_report_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/henry_report_image"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

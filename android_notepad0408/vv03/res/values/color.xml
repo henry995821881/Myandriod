@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="henry_orange">#FFB90F</color>
+    <color name="henry_blue">#436EEE</color>
+    <color name="henry_blue">#436EEE</color>
+    <color name="henry_gray">#949494</color>
+    <color name="henry_white">#FFFFFF</color>
+    <color name="henry_pink">#FFAEB9</color>
+    <color name="henry_backgroud_me">#D9D9D9</color>
+    <color name="henry_line">#E5E5E5</color>
+    <color name="henry_yellow">#FFD700</color>
+    <color name="henry_a_gray">#20C7C7C7</color>
+    <color name="henry_Textpaint_color">#5CACEE</color>
+    
+</resources>

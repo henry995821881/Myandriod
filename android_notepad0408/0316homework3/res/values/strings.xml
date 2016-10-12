@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">0316homework3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Name">
+        
+        <item >jack</item>
+        <item >henry</item>
+        <item >jerry</item>
+        <item >tom</item>
+        <item >john</item>
+        <item >mary</item>
+        <item >bob</item>
+        <item >hello</item>
+        <item >stave</item>
+    </string-array>
+    
+</resources>

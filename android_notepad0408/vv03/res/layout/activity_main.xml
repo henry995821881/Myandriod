@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- body -->
+
+    <FrameLayout
+        android:id="@+id/henry_Mymain_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" >
+    </FrameLayout>
+
+    <!-- head -->
+
+    <RelativeLayout
+        android:id="@+id/henry_Mymain_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <!-- foot -->
+
+    <LinearLayout
+        android:id="@+id/henry_Mymain_foot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/henry_Mymain_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/radio_main_house"
+                android:gravity="center"
+                android:text="@string/main_pager"
+                android:textSize="@dimen/main_radiobutton_text" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_main_house"
+                android:gravity="center"
+                android:text="@string/main_pager"
+                android:textSize="@dimen/main_radiobutton_text" />
+
+            <RadioButton
+                android:id="@+id/henrytoweibo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_main_house"
+                android:gravity="center"
+                android:text="@string/henry_weibo"
+                android:textSize="@dimen/main_radiobutton_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

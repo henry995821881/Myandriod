@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XMLCreateAndPullDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_create">生成XML文件</string>
+    <string name="btn_pull">读取XML文件</string>
+
+</resources>

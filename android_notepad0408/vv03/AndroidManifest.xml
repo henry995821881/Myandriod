@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.henry.myweibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- 授权AuthActivity -->
+        <activity
+            android:name="com.henry.myweibo.AuthActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 授权使用的浏览 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 微博主页 -->
+        <activity android:name="com.henry.myweibo.WeiboMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 欢迎 -->
+
+        <activity android:name="com.henry.myweibo.Welcome" >
+        </activity>
+
+        <!--  -->
+        <activity
+            android:name="com.henry.myweibo.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <!-- 发表 -->
+        <activity android:name="com.henry.myweibo.PublishWeibo" >
+        </activity>
+
+        <service android:name="com.henry.myweibo.MyService" >
+        </service>
+
+        <!-- 发表文字 -->
+        <activity
+            android:name="com.henry.myweibo.WeiboPublishChar"
+            android:label="@string/title_activity_weibo_publish_char" >
+        </activity>
+        <!-- 发表tupian -->
+        <activity
+            android:name="com.henry.myweibo.WeiboPublishPic"
+            android:label="@string/title_activity_weibo_publish_pic" >
+        </activity>
+
+        <!-- 评论 -->
+        <activity android:name="com.henry.myweibo.WeiboComment" >
+        </activity>
+        <!-- 转发 -->
+        <activity android:name="com.henry.myweibo.WeiboReport" >
+        </activity>
+        <!-- 图片查看 -->
+        <activity
+            android:name="com.henry.myweibo.PhoneViewer"
+            android:label="@string/title_activity_phone_viewer" >
+        </activity>
+        <!-- 微博正文 -->
+        <activity
+            android:name="com.henry.myweibo.WeiboBody"
+            android:label="@string/title_activity_weibo_body" >
+        </activity>
+        <!-- 指定用户主页以及他的微博 -->
+        <activity
+            android:name="com.henry.myweibo.UserHome"
+            android:label="@string/title_activity_user_home" >
+        </activity>
+      <!--   @my -->
+        <activity
+            android:name="com.henry.myweibo.MyStatus"
+            android:label="@string/title_activity_my_status" >
+        </activity>
+    </application>
+
+</manifest>

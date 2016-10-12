@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/henry_line"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:id="@+id/henry_frag_host_list_re_9item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:maxLength="200" 
+        android:singleLine="false" 
+        android:text="123123"/>
+
+    <!-- 单图 -->
+
+    <ImageView
+        android:id="@+id/henry_frag_host_re_list_item_single_pic"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/henry_frag_host_list_re_9item_text"
+        android:scaleType="center"
+        android:visibility="gone"
+     />
+
+    <!-- 多图 -->
+
+    <include
+        android:id="@+id/henry_gridlayout_re_9pic"
+        android:layout_below="@id/henry_frag_host_list_re_9item_text"
+        android:layout_centerInParent="true"
+        layout="@layout/henry_gridlayout"
+        android:visibility="gone" />
+
+</LinearLayout>

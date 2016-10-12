@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context=".MyStatus" >
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:textSize="30sp"
+        android:textColor="@color/henry_orange"
+        android:text="我的微博" />
+    
+    <com.henry.view1.CustomListView
+        
+       android:layout_below="@+id/title"
+        android:id="@+id/henry_mystatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.henry.view1.CustomListView>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHome" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_mine" >
+
+                <ImageView
+                    android:id="@+id/henry_user_icon_iv"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/henry_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/henry_user_icon_iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="金牛就独守"
+                    android:textColor="@color/henry_orange"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:src="@drawable/mine_vip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/henry_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_alignTop="@id/henry_user_name"/>
+
+                <LinearLayout
+                    android:id="@+id/henry_user_ll_concern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/henry_user_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/henry_user_home_follows"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="粉丝：12"
+                        android:textColor="@color/henry_white" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/henry_white" />
+
+                    <TextView
+                        android:id="@+id/henry_user_home_concerns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="关注：12"
+                        android:textColor="@color/henry_white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/henry_user_home_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/henry_user_ll_concern"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="jldsdsjlfsldkjfslkdjflksdjfklasjdffsakdfjlskdajfslaksdfjlsdkjflsdjfsldjfdjfksldjf"
+                    android:textColor="@color/henry_white" />
+            </RelativeLayout>
+
+            <com.henry.view1.MyListView
+                android:id="@+id/henry_user_home_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relativeLayout1"
+                android:layout_centerHorizontal="true" >
+            </com.henry.view1.MyListView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

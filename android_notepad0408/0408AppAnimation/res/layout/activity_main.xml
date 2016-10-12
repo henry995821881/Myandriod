@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <GridView
+        android:id="@+id/gv_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="60dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:layoutAnimation="@anim/random"
+        android:numColumns="5"
+        android:padding="10dp"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</RelativeLayout>

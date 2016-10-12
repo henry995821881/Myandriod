@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    
+    
+   
+    
+    
+    
+    <!-- body -->
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/henry_weibo_fraglayout_topbottom_margin"
+        android:layout_marginBottom="@dimen/henry_weibo_fraglayout_topbottom_margin"
+        android:id="@+id/henry_weibo_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" >
+    </FrameLayout>
+
+     <!-- head discover-->
+
+   <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/henry_weibo_main_header_discover"
+        android:layout_width="match_parent"
+      android:layout_height="@dimen/henry_weibo_head_foot_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="发现"
+            android:textSize="30sp" />
+
+      
+    </RelativeLayout>
+    
+    <!-- head 消息-->
+
+   <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/henry_weibo_main_header_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/henry_weibo_head_foot_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="消息"
+            android:textSize="30sp" />
+
+      
+    </RelativeLayout>
+    
+    <!-- head 我-->
+
+   <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/henry_weibo_main_header_me"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/henry_weibo_head_foot_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="我"
+            android:textSize="30sp" />
+
+      
+    </RelativeLayout>
+    
+     <!-- head 首页-->
+    <RelativeLayout
+      
+        android:id="@+id/henry_weibo_main_header_host"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/henry_weibo_head_foot_height"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+           
+            android:textSize="@dimen/main_headButton_text" />
+<!-- 
+        <Button
+            android:id="@+id/henry_main_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/main_home"
+            android:background="@null"
+            android:onClick="loginweibo"
+            android:text="@string/login"
+            android:textColor="#FFA500"
+            android:textSize="@dimen/main_headButton_text" />
+ -->
+    </RelativeLayout>
+    
+    
+    
+    
+
+    <!-- foot -->
+
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/henry_weibo_head_foot_height"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/henry_weibo_foot_radioGp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/henry_radio_main_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/radio_main_house"
+                android:gravity="center"
+                android:text="@string/main_pager"
+                android:textSize="@dimen/main_radiobutton_text" />
+
+            <RadioButton
+                android:id="@+id/henry_radio_main_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_main_message"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textSize="@dimen/main_radiobutton_text" />
+
+            <ImageButton
+                android:id="@+id/btn_main_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="publishWeibo"
+                android:background="@null"
+                android:button="@null"
+                android:src="@drawable/tabbar_compose_background_icon_add" />
+
+            <RadioButton
+                android:id="@+id/henry_radio_main_discover"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_main_discover"
+                android:gravity="center"
+                android:text="@string/discover"
+                android:textSize="@dimen/main_radiobutton_text" />
+
+            <RadioButton
+                android:id="@+id/henry_radio_main_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_main_profile"
+                android:gravity="center"
+                android:text="@string/me"
+                android:textSize="@dimen/main_radiobutton_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+    
+    
+</RelativeLayout>

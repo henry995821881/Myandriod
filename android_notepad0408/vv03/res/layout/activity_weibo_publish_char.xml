@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:layout_marginTop="@dimen/henry_weibo_report_margin"
+    tools:context=".WeiboPublishChar" >
+
+    <RelativeLayout
+        android:id="@+id/henry_publicweibo_char_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/henry_weibo_publish_head_height"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/henry_gray"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/henry_button_send_selector"
+            android:onClick="cancel"
+            android:textSize="15sp"
+            android:text="@string/henry_publish_cancle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="@color/henry_orange"
+            android:text="@string/henry_publish_weibo" />
+
+        <Button
+            android:layout_marginRight="30dp"
+             android:layout_marginBottom="5dp"
+            android:textColor="@color/henry_gray"
+            android:textSize="15sp"
+            android:layout_width="53dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/henry_button_send_selector"
+            android:onClick="send"
+            android:text="@string/henry_publish_send" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/henry_publish_weibo_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/henry_publicweibo_char_head"
+        android:hint="@string/henry_publish_share_newThings"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:maxLength="120"
+        android:minLines="6"
+        android:background="@drawable/henry_edit_seletor"
+        android:singleLine="false" />
+
+</RelativeLayout>

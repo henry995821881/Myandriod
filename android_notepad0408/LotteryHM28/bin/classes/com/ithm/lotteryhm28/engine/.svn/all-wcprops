@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/dev/!svn/ver/190/trunk/LotteryHM28/src/com/ithm/lotteryhm28/engine
+END
+BaseEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dev/!svn/ver/171/trunk/LotteryHM28/src/com/ithm/lotteryhm28/engine/BaseEngine.java
+END
+UserEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dev/!svn/ver/190/trunk/LotteryHM28/src/com/ithm/lotteryhm28/engine/UserEngine.java
+END
+CommonInfoEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/dev/!svn/ver/180/trunk/LotteryHM28/src/com/ithm/lotteryhm28/engine/CommonInfoEngine.java
+END

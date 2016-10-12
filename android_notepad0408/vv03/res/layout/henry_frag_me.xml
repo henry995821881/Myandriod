@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/henry_backgroud_me" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<!-- 
+        是否有网络 -->
+        <TextView
+            android:visibility="gone" 
+            android:id="@+id/henry_network_tv"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/henry_gray"
+            android:text="没有网络"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/henry_yellow"/>
+        <LinearLayout
+            
+            android:id="@+id/henry_mandetil"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/henry_height_me_item_man"
+            android:layout_marginTop="@dimen/henry_weibo_fragme_margintop"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+               
+                android:id="@+id/henry_fragme_header_icon"
+                android:layout_width="@dimen/henry_weibo_fragme_profile_image"
+                android:layout_height="@dimen/henry_weibo_fragme_profile_image"
+                android:layout_marginRight="@dimen/henry_litteMargin"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <!-- 昵称 -->
+
+                <TextView
+                    android:id="@+id/henry_fragme_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/henry_litteMargin"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/henry_default_fontsize" />
+
+                <TextView
+                    android:id="@+id/henry_fragme_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/henry_litteMargin"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/henry_default_Small_fontsize" />
+            <TextView
+                    android:id="@+id/henry_fragme_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    
+                    android:textSize="@dimen/henry_default_Small_fontsize" />
+            </LinearLayout>
+          
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/henry_fragme_vip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/henry_fragme_ll_weibocount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/henry_height_me_item"
+            android:layout_below="@id/henry_mandetil"
+            android:layout_marginTop="@dimen/henry_litteMargin"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/henry_fragme_statuses_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/henry_fragme_friends_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/henry_fragme_followers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/henry_litteMargin"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/henry_weibo" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/henry_concern" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/henry_fans" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- //好友 -->
+
+        <LinearLayout
+            android:id="@+id/henry_fragme_friends"
+            android:layout_marginTop="@dimen/henry_litteMargin"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/henry_weibo_fragme_item_wid"
+            android:layout_below="@id/henry_fragme_ll_weibocount"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:src="@drawable/henry_icon_myfriends" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:text="@string/henry_myfreind" />
+                
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginRight="@dimen/henry_weibo_fragme_arraw_margin"
+                    android:src="@drawable/henry_table_arrow" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+        
+        
+        
+         <!-- //相册-->
+
+        <LinearLayout
+            
+            android:id="@+id/henry_fragme_pic"
+            android:layout_marginTop="@dimen/henry_litteMargin"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/henry_weibo_fragme_item_wid"
+            android:layout_below="@id/henry_fragme_friends"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:src="@drawable/henry_fragme_mypic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:text="@string/henry_mypic" />
+                
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginRight="@dimen/henry_weibo_fragme_arraw_margin"
+                    android:src="@drawable/henry_table_arrow" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+        
+           <!-- //我的攒-->
+
+        <LinearLayout
+           
+            android:layout_marginTop="@dimen/henry_litteMargin"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+           android:layout_height="@dimen/henry_weibo_fragme_item_wid"
+            android:layout_below="@id/henry_fragme_pic"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:src="@drawable/henry_fragme_myzan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:text="@string/henry_myzan1" />
+                
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/henry_weibo_fragme_arraw_margin"
+                    android:gravity="left"
+                    android:src="@drawable/henry_table_arrow" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

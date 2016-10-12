@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.henry"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.henry.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                
+                <action android:name="android.intent.action.MAIN" />
+               
+                <!-- 桌面生成启动图标 -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" 
+            android:label="@android:drawable/btn_default_small">
+         <!--    一个过滤器可以有多个action -->
+        <!--  一个activity也可以有多个过滤器 -->
+            <intent-filter >
+                <action android:name="com.henry.in"/>
+                <action android:name="com.henry.hello"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

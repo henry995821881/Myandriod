@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="citys">
+        <item>shanghai1</item>
+        <item>shanghai2</item>
+        <item>shanghai3</item>
+        <item>shanghai4</item>
+        <item>shanghai5</item>
+        <item>shanghai6</item>
+        <item>shanghai7</item>
+        <item>shanghai8</item>
+        <item>shanghai9</item>
+        <item>shanghai10</item>
+        <item>shanghai81</item>
+        <item>shanghai67</item>
+        <item>shanghai63</item>
+        <item>shanghai65</item>
+    </string-array>
+    <string-array name="cityId">
+        <item>021</item>
+        <item>021</item>
+        <item>051</item>
+        <item>091</item>
+        <item>021</item>
+        <item>081</item>
+        <item>021</item>
+        <item>020</item>
+        <item>021</item>
+        <item>021</item>
+        <item>021</item>
+        <item>021</item>
+        <item>021</item>
+        <item>021</item>
+    </string-array>
+    <string-array name="music">
+        <item>播放</item>
+        <item>暂停</item>
+        <item>快进</item>
+        <item>后退</item>
+        <item>停止</item>
+    </string-array>
+
+</resources>

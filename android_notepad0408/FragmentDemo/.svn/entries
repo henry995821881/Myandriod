@@ -1,0 +1,122 @@
+8
+
+dir
+6638
+svn://iotek2012.xicp.net/IotekEduSVN/1_%E6%95%99%E5%AD%A6%E9%83%A8/%E7%BB%83%E4%B9%A0%E9%A2%98%E5%BA%93/%E5%9B%9E%E5%AE%B6%E4%BD%9C%E4%B8%9A/Android/Android%E9%9A%94%E6%97%A5%E4%BD%9C%E4%B8%9A_V1.0/21.%20%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%80%E5%92%8C%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0%20ActionBar%E5%92%8CFragment-%E5%9B%9E%E5%AE%B6%E4%BD%9C%E4%B8%9A/1.%20%E7%AE%80%E5%8D%95/%E6%BA%90%E7%A0%81/FragmentDemo
+svn://iotek2012.xicp.net
+
+
+
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+42289cea-4732-4436-946f-4b0ff5ec388f
+
+.classpath
+file
+
+
+
+
+2015-04-01T01:33:51.540126Z
+e43b9e994685d1055e421f721677fe94
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+project.properties
+file
+
+
+
+
+2015-04-01T01:33:51.549126Z
+6370367d557b4cc1bcb4c1857bca3d2d
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+assets
+dir
+
+.project
+file
+
+
+
+
+2015-04-01T01:33:51.559127Z
+265a750b34db98a2968211b961cec5e2
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+proguard-project.txt
+file
+
+
+
+
+2015-04-01T01:33:51.570128Z
+18bfe77c342b4698f1cef19cf8d918e2
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+AndroidManifest.xml
+file
+
+
+
+
+2015-04-01T01:33:51.582128Z
+a252be8a442d5c5c33a3b325dce80fcb
+2015-03-24T00:41:59.951452Z
+5582
+yb
+
+src
+dir
+
+bin
+dir
+
+gen
+dir
+
+libs
+dir
+
+res
+dir
+
+ic_launcher-web.png
+file
+
+
+
+
+2015-04-01T01:33:51.596129Z
+03162f4ee138bcbae36f78b1d25dbd5b
+2015-03-24T00:41:59.951452Z
+5582
+yb
+has-props
+
+.settings
+dir
+

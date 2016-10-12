@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="10%"
+    android:toXDelta="100%" 
+    android:fromYDelta="10%"
+    android:toYDelta="100%"
+    android:fillAfter="true"
+    android:duration="2000">
+    
+   <!-- 
+    android:fillAfter="true"
+         表示执行完动画就在移动到的位置
+           后面加上p表示相对于控件的父控件  
+    android:fromXDelta="10%p"
+    android:toXDelta="100%p" 
+    android:fromYDelta="10%p"
+    android:toYDelta="100%p"
+     -->
+
+</translate>

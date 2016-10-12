@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/henry_backgroud_me" >
+
+    <com.henry.view1.CustomListView
+        android:id="@+id/henry_frag_host_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp" />
+
+    
+    
+    
+    <LinearLayout
+        android:background="@color/henry_orange"
+        android:id="@+id/henry_frag_host_loading_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/henry_frag_host_listview"
+       
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/henry_listview_foot_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/henry_anim_list_load"
+            />
+
+        <TextView
+            android:id="@+id/henry_listview_foot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/henry_laoding"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

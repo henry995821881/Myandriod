@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">微移动</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="register">注册</string>
+    <string name="login">login</string>
+    <string name="me">我</string>
+    <string name="discover">发现</string>
+    <string name="message">消息</string>
+    <string name="main_pager">首页</string>
+    <string name="henry_weibo">微博</string>
+    <string name="henry_concern">关注</string>
+    <string name="henry_fans">粉丝</string>
+    <string name="henry_myfreind">我的好友</string>
+    <string name="henry_mypic">我的相册</string>
+    <string name="henry_myzan1">我的攒</string>
+    <string name="henry_return">返回</string>
+    <string name="henry_enterweibo">进入</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="henry_frag_host_source">来自: </string>
+    <string name="henry_descrition">简介：</string>
+    <string name="henry_laoding">加载中>>>>></string>
+    <string name="henry_publish_weibo">发微博</string>
+    <string name="henry_publish_comment">发评论</string>
+    <string name="henry_publish_report">转发</string>
+    <string name="henry_publish_cancle">取消</string>
+    <string name="henry_publish_send">发送</string>
+    <string name="henry_publish_share_newThings">分享新鲜事...</string>
+    <string name="henry_publish_post_comment">写评论...</string>
+    <string name="title_activity_weibo_publish_char">WeiboPublishChar</string>
+    <string name="title_activity_weibo_publish_pic">WeiboPublishPic</string>
+    <string name="title_activity_phone_viewer">PhoneViewer</string>
+    <string name="title_activity_weibo_body">WeiboBody</string>
+    <string name="title_activity_user_home">UserHome</string>
+    <string name="title_activity_my_status">MyStatus</string>
+    <string name="mine">我的</string>
+
+</resources>

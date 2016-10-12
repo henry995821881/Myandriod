@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/dev/!svn/ver/190/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal
+END
+Message.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/dev/!svn/ver/170/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Message.java
+END
+Leaf.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dev/!svn/ver/162/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Leaf.java
+END
+Header.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/dev/!svn/ver/170/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Header.java
+END
+Oelement.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/dev/!svn/ver/170/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Oelement.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/dev/!svn/ver/162/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Element.java
+END
+Body.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/dev/!svn/ver/170/trunk/LotteryHM28/src/com/ithm/lotteryhm28/net/protocal/Body.java
+END

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+   <!--  同时执行所有的动画 
+   如果想要有顺便播放可以加这个属性
+   延迟加载
+   android:startOffset=""
+   -->
+   <rotate 
+    android:duration="2000"
+    android:fromDegrees="0"
+    android:pivotX="100%"
+    android:pivotY="100%"
+   
+    android:repeatCount="5"
+    android:toDegrees="360" >
+
+</rotate> 
+
+   <scale 
+    android:fromXScale="1"
+    android:toXScale="2"
+    android:fromYScale="1"
+    android:toYScale="5" 
+    android:duration="2000">
+</scale>
+
+   <translate 
+    android:fromXDelta="10%"
+    android:toXDelta="100%" 
+    android:fromYDelta="10%"
+    android:toYDelta="100%"
+    android:fillAfter="true"
+    android:duration="2000"/>
+
+</set>

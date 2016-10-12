@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+android:duration代表动画持续的时间
+android:interpolator代表一个插值器资源
+-->
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_longAnimTime"
+    android:fromAlpha="0.0"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:toAlpha="1.0" />

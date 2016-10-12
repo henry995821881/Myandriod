@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="doNews"
+            android:text="体育新闻" />
+
+        <Button
+            android:id="@+id/btn_enjoy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="doNews"
+            android:text="娱乐新闻" />
+
+        <Button
+            android:id="@+id/btn_fian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:onClick="doNews"
+            android:text="财经新闻" />
+    </LinearLayout>
+
+    <!-- 容器用来动态存放FRAGMENT -->
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

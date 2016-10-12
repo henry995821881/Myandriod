@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/henry_backgroud_me" >
+
+    <ImageView
+        android:id="@+id/henry_image_welcome_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/henry_welcome_android_slogan" />
+
+    <LinearLayout
+        android:id="@+id/henry_publish_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/henry_image_welcome_android"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="2" >
+
+            <Button
+                android:onClick="sendweibochar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_char"
+                android:text="文字" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_pic_vidio"
+                android:onClick="sendweibopic"
+                android:text="照片/视频" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_article"
+                android:text="头条文字" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_mark"
+                android:text="签到" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_com"
+                android:text="点评" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:drawableTop="@drawable/henry_publish_more"
+                android:text="更多" />
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>

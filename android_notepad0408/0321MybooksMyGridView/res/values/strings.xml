@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">0321Mybooks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+     <string-array name="bookName">
+        <item>天龙八部</item>
+        <item>搜神记</item>
+        <item>西游记</item>
+        <item>水浒传</item>
+        <item>红楼梦</item>
+        <item>雪山飞狐</item>
+        <item>射雕英雄传</item>
+        <item>神雕侠侣</item>
+        <item>忏悔录</item>
+        <item>三国志</item>
+        <item>三国演义</item>
+        <item>资治通鉴</item>
+        <item>史记</item>
+        <item>Android</item>
+        <item>Java</item>
+        <item>C语言</item>
+        <item>Linux</item>
+        <item>马克思主义</item>
+        <item>线性代数</item>
+        <item>概率论</item>
+    </string-array>
+</resources>

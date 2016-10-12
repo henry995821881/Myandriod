@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TabHost
+        android:id="@+id/tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fazhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法制" />
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="hellow1"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fazhi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="娱乐" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="hellow2"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/fazhi3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="傻逼" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="hellow3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
